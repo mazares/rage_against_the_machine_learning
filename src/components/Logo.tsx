@@ -1,18 +1,12 @@
 import { Link } from "@tanstack/react-router";
-
-import LogoPic1 from "../assets/monkey1.webp";
-import LogoPic2 from "../assets/monkey2.webp";
-
-import { useThemeStore } from "../store/themeStore";
+import LogoPic3 from "../assets/monkey3.svg";
 
 export default function Logo() {
-  const { theme } = useThemeStore();
-
   return (
     <Link to="/">
       <div className="flex items-center content-center justify-center self-start justify-self-start max-w-content max-h-content aspect-ratio-square size-[10vh] lg:size-[20vh]">
         <img
-          src={theme === "dark" ? LogoPic2 : LogoPic1}
+          src={LogoPic3}
           alt="logo"
           className="flex absolute z-1 size-[8vh] lg:size-[16vh] aspect-ratio-square"
         />
@@ -26,17 +20,12 @@ export default function Logo() {
           aria-label="Logo graphic"
           className="z-2 aspect-ratio-square pointer-events-none"
         >
-          <defs>
-            {/*<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FF5733" />
-              <stop offset="100%" stopColor="#FFC300" />
-            </linearGradient>*/}
-          </defs>
+          <defs></defs>
           <path id="curve" fill="none" d="M 25 125 A 100 100 0 1 1 25 127" />
 
           <text
             fontSize={34}
-            // fill="url(#gradient)"
+
             className="logo--text"
           >
             <textPath href="#curve">
