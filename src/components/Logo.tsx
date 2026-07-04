@@ -4,7 +4,7 @@ import LogoPic3 from "../assets/monkey3.svg";
 export default function Logo() {
   return (
     <Link to="/">
-      <div className="flex items-center content-center justify-center self-start justify-self-start max-w-content max-h-content aspect-ratio-square size-[10vh] lg:size-[20vh]">
+      <div className="logo flex items-center content-center justify-center self-start justify-self-start max-w-content max-h-content aspect-ratio-square size-[10vh] lg:size-[20vh]">
         <img
           src={LogoPic3}
           alt="logo"

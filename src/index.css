@@ -14,6 +14,10 @@
 
 body {
     font-family: "special";
+    scroll-behavior: smooth;
+    scroll-margin-block: 0;
+    scrollbar-width: none;
+    scroll-snap-align: center;
 }
 
 .dark{
@@ -26,17 +30,15 @@ body {
     color: var(--dark-grey);
 }
 
+/*.logo {
+    animation: glitch 10s infinite linear;
+}*/
+
 svg text{
         transform-origin: 50% 50%;
         animation: rotate linear infinite 10s ;
 }
 
-svg img  {
-    background-blend-mode: hard-light;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 svg textPath {
     font-family: "special", sans-serif;
@@ -51,3 +53,12 @@ svg textPath {
 			transform: rotate(360deg);
 		}
 }
+
+/*@keyframes glitch {
+    0%, 49%, 51%, 100% {
+        transform: skew(0deg);
+    }
+    50% {
+        transform: skew(180deg);
+    }
+}*/
