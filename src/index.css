@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: "special";
+    src: url('./assets/fonts/SpecialElite-Regular.ttf');
+}
+
+@import 'tailwindcss';
+
+
+ :root {
+    --dark-grey: #333;
+    --light-grey: #ddd;
+}
+
+body {
+    font-family: "special";
+}
+
+.dark{
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+.light{
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+}
+
+svg text{
+        transform-origin: 50% 50%;
+        animation: rotate linear infinite 10s ;
+}
+
+svg img  {
+    background-blend-mode: hard-light;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+svg textPath {
+    font-family: "special", sans-serif;
+    fill: currentColor;
+}
+
+@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+}
